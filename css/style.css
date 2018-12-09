@@ -6,3 +6,8 @@ body {
   background: linear-gradient(to left, #45B649, #DCE35B);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+h1, h2 {
+  font-family: 'Lato', sans-serif;
+  color: whitesmoke;
+}
