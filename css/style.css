@@ -1,72 +1,19 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 body, html {
   height: 100%;
   overflow: hidden;
 }
 
 body {
+  font-family: 'Lato', sans-serif;
   margin: 0;
   line-height: 1.5;
-  border-top: 5px solid black;
   background: #006400;
   /*fallback bg color for older browsers*/
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url('/img/bg.jpg') no-repeat fixed center;
   background-size: cover;
 }
 
+/*Layout styles */
 .headline {
   margin: 0;
   padding: 0 0 10px 0;
@@ -77,6 +24,32 @@ body {
   text-align: center;
 }
 
+.main-nav {
+  background-color: black;
+  height: 80px;
+}
+
+nav {
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px rgba(0,0,0,.5);
+}
+
+.nav-wrapper {
+  text-align: center;
+}
+
+.brand {
+  text-decoration: none;
+}
+
+.brand p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 2rem;
+  padding-top: 15px;
+}
+
 /* FONT STYLES */
 h1, h2 {
   font-family: 'Lato', sans-serif;
@@ -85,15 +58,16 @@ h1, h2 {
 
 a {
   color: whitesmoke;
+  text-decoration: none;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: normal;
 }
 
@@ -106,16 +80,21 @@ hr {
 /* Media Queries */
 @media only screen and (min-width: 1024px) {
   h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: normal;
   }
 
   hr {
     width: 700px;
+  }
+
+  .nav-wrapper {
+    text-align: left;
+    padding-left: 10px;
   }
 }
 
@@ -131,5 +110,9 @@ hr {
 
   hr {
     width: 1000px;
+  }
+
+  .nav-wrapper {
+    text-align: left;
   }
 }
